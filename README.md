@@ -29,3 +29,17 @@ Topic modelling and analysis on Nature published articles since 1873.
 <!-- ![product-screenshot-tbc](data/example-inference.png) -->
 [Nature](https://www.nature.com/) is one of the most cited scientific journals. Among different types of sections in an issue, [original research articles](https://www.nature.com/nature/articles?type=article) are original reports whose conclusions represent a substantial advance in understanding of an important problem and have immediate, far-reaching implications. The general articles information and corresponding article abstracts were obtained via a scraper. Based on these data, explotary data analysis was performed and topic modelling was performed for further understanding the general scope of th
 * [Getting Started](#getting-started)
+
+
+## The Story so Far
+Explore the [Bertopic](https://github.com/MaartenGr/BERTopic) generated topics over time:
+![product-screenshot-tbc](images/Topics_over_time.png)
+
+Present the generated topics among the 15000 abstracts:
+![product-screenshot-tbc](images/Intertopic_distance_map.png)
+
+Pay attention to the topic word scores:
+![product-screenshot-tbc](images/Topic_word_scores.png)
+
+And it's interesting to explore the hierarchical distribustion of the founded topics:
+![product-screenshot-tbc](images/Hierarchical_clustering.png)
