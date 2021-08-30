@@ -45,6 +45,11 @@ And it's interesting to explore the hierarchical distribustion of the founded to
 ## Exploratory Data Analysis
 Obviously, the covid-19 pandemic hindered the development of plenty areas, e.g. business, internationalism. At the beginning of the pandemic, some academic labs are closed and a lot of experiments are delayed. It's interesting to analize whether the pandemic indeed slow down the development of academia.
 
+Topic word score.
+After fit and transform, Bertopic generated corresponding embedding space which can be utilized for further analysis. First of all, it's important to know how many topics over the 16276 articles from 1873 to 2021 of the Nature. There are around 240 topics recognized from the abstract pool. For illustration, top 6 topics and three personal interested topics are presented in Fig. 1.
+
+
+
 ## Citation
 
 ```bibtex
