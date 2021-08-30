@@ -10,17 +10,15 @@ Topic modelling and analysis on Nature published articles since 1873.
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Built With](#built-with)
+
 * [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [The Story so Far](#the-story-so-far)
+  * [Topic modelling](#topic-modelling)
+  * [Exploratory Data Analysis](#eda)
   * [Notebooks](#notebooks)
   * [Scripts and Tools](#scripts-and-tools)
-  * [Research](#research)
-  * [Reporting](#reporting)
   * [Supplementary Data](#supplementary-data)
-* [Proposed Updates](#proposed-updates)
-* [License](#license)
+* [Conclusion](#conclusion)
+* [Citation](#citation)
 * [Contact](#contact)
 
 <!-- ABOUT THE PROJECT -->
@@ -31,7 +29,7 @@ Topic modelling and analysis on Nature published articles since 1873.
 * [Getting Started](#getting-started)
 
 
-## The Story so Far
+## Topic Modelling
 Explore the [Bertopic](https://github.com/MaartenGr/BERTopic) generated topics over time:
 ![product-screenshot-tbc](images/Topics_over_time.png)
 
@@ -43,3 +41,31 @@ Pay attention to the topic word scores:
 
 And it's interesting to explore the hierarchical distribustion of the founded topics:
 ![product-screenshot-tbc](images/Hierarchical_clustering.png)
+
+## Exploratory Data Analysis
+Obviously, the covid-19 pandemic hindered the development of plenty areas, e.g. business, internationalism. At the beginning of the pandemic, some academic labs are closed and a lot of experiments are delayed. It's interesting to analize whether the pandemic indeed slow down the development of academia.
+
+## Citation
+
+```bibtex
+@article{devito2020we,
+  title={How we learnt to stop worrying and love web scraping},
+  author={DeVito, Nicholas J and Richards, G and Inglesby, Peter},
+  journal={Nature},
+  volume={585},
+  year={2020},
+  publisher={Nature Research}
+}
+```
+
+```bibtex
+@misc{grootendorst2020bertopic,
+  author       = {Maarten Grootendorst},
+  title        = {BERTopic: Leveraging BERT and c-TF-IDF to create easily interpretable topics.},
+  year         = 2020,
+  publisher    = {Zenodo},
+  version      = {v0.7.0},
+  doi          = {10.5281/zenodo.4381785},
+  url          = {https://doi.org/10.5281/zenodo.4381785}
+}
+```
