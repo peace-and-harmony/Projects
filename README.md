@@ -77,13 +77,13 @@ From the results of topic modelling, it is intriguing to overview the topic evol
 
 ```bibtex
 @misc{grootendorst2020bertopic,
-  author       = {Maarten Grootendorst},
-  title        = {BERTopic: Leveraging BERT and c-TF-IDF to create easily interpretable topics.},
-  year         = 2020,
-  publisher    = {Zenodo},
-  version      = {v0.7.0},
-  doi          = {10.5281/zenodo.4381785},
-  url          = {https://doi.org/10.5281/zenodo.4381785}
+  author = {Maarten Grootendorst},
+  title = {BERTopic: Leveraging BERT and c-TF-IDF to create easily interpretable topics.},
+  year  = 2020,
+  publisher = {Zenodo},
+  version = {v0.7.0},
+  doi = {10.5281/zenodo.4381785},
+  url = {https://doi.org/10.5281/zenodo.4381785}
 }
 ```
 ## Contact
