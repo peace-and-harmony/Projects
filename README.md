@@ -1,7 +1,7 @@
 # Nature articles topic modelling
 Topic modelling and analysis on Nature published articles since 1873.
 
-* Scraped around 18000 articles from 1873 to 2021.
+* Scraped around 19760 articles from 1873 to 2021.
 * Performed EDA on the numerical data and concluded that the pandemic indeed boosts the related researches.
 * Utilized Bertopic to the extracted abstracts to investigate the subjects evolution along the history.
 
@@ -14,11 +14,12 @@ Topic modelling and analysis on Nature published articles since 1873.
 * [Results and discussion](#results-and-discussion)
   * [Topic modelling](#topic-modelling)
   * [Exploratory data analysis](#eda)
+* [Conclusion](#conclusion)
+* [Citation](#citation)
+* [Supplimentary information](#supplimentary-info)   
   * [Notebooks](#notebooks)
   * [Scripts and tools](#scripts-and-tools)
   * [Supplementary data](#supplementary-data)
-* [Conclusion](#conclusion)
-* [Citation](#citation)
 * [Contact](#contact)
 
 <!-- ABOUT THE PROJECT -->
@@ -61,6 +62,12 @@ Obviously, the covid-19 pandemic hindered the development of plenty areas, e.g. 
 ## Conclusion
 EDA clearly suggests that instead of hindering the development of academia, the pandemic expands and accelerate areas related with SARS‑CoV‑2. 
 From the results of topic modelling, it is intriguing to overview the topic evolutions over the 148 years which closely related with human beings' development and can be foreseen the futher areas that human will focused on. 
+
+## Supplimentary information
+For more details of this project, please check the information listed below.
+  * [Notebooks](#notebooks)
+  * [Scripts and tools](#scripts-and-tools)
+  * [Supplementary data](#supplementary-data)
 
 ## Citation
 
