@@ -35,7 +35,7 @@ Topic modelling and analysis on Nature published articles since 1873.
 
 At the stage of information explosion era, topic modelling becomes essential for understanding of unstructured data. Nature research articles provide the highly focused and trustable multidisciplinary presentations of the essence of human knowledge.
 
-After fit and transform, Bertopic generated corresponding embedding space which can be utilized for further analysis. First of all, it's important to know how many topics over the 16276 articles from 1873 to 2021 inside the interested text data. There are around 240 topics recognized from the abstract pool. For illustration, top 6 topics and three personal interested topics are presented in Fig. 1.
+After fit and transform, Bertopic generated corresponding embedding space which can be utilized for further analysis. First of all, it's important to know how many topics over the 16276 articles from 1873 to 2021 inside the interested text data. There are 262 topics recognized from the abstract pool. For illustration, the first 6 frequent topics and three more specific topics are presented in Fig. 1.
 
 <figure align="center">
   <img src="images/2D_topic_distribusion.png">
@@ -44,9 +44,9 @@ After fit and transform, Bertopic generated corresponding embedding space which 
 
 >The 2D distribution map was generated via the UMAP which reduced the high dimension embedding space to 2 dimensional space. Each circle represents one topic recognized by Bertopic. The diameter of each circle indicates the size of the corresponding topic (Number of abstracts is sorted to this category.) The red circle is the topic 13 and accompanied with the corresponding topic words.
 
-The complete information of the topics is presented in the supplementary information section.
+The complete topics generated can be found in the supplementary information section.
 
-Among the 262 topics, here, we only present the top 6 topics and three more interested topics which were realized by cosine similarity encoded by the author. Figure 2 lists the resulting topics of interest.
+Here, we present the mentioned 9 topics in the form of topicc word scores. Among them, last three topics were searched by cosine similarity via the keywords: covid, deep learning and perovskite. Figure 2 lists the resulting topics of interest.
 
 <figure align="center">
   <img src="images/Topic_word_scores.png">
@@ -54,6 +54,8 @@ Among the 262 topics, here, we only present the top 6 topics and three more inte
 </figure>
 
 >Topics were generated via pre-trained sentence transformer model: paraphrase-MiniLM-L6-v2. The nine topics of interest were used to evaluate the  quality of the pre-trained sentence transformer. Among the tested 5 pre-trained models, paraphrase-MiniLM-L6-v2 gives the best prediction based on the accuracy and meaningfulness of the topic words.
+
+
 
 >Perspective for topic evolution over 148 years from 1873 to 2021.
 Explore the [Bertopic](https://github.com/MaartenGr/BERTopic) generated topics over time:
