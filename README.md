@@ -35,22 +35,44 @@ Topic modelling and analysis on Nature published articles since 1873.
 
 At the stage of information explosion era, topic modelling becomes essential for understanding of unstructured data. Nature research articles provide the highly focused and trustable multidisciplinary presentations of the essence of human knowledge.
 
-After fit and transform, Bertopic generated corresponding embedding space which can be utilized for further analysis. First of all, it's important to know how many topics over the 16276 articles from 1873 to 2021 inside the interested text data. There are 262 topics recognized from the abstract pool. For illustration, the first 6 frequent topics and three more specific topics are presented in Fig. 1.
+After fit and transform, Bertopic generated corresponding embedding space which can be utilized for further analysis. First of all, it's important to know how many topics over the 16276 articles from 1873 to 2021 inside the interested text data. There are 247 topics recognized from the abstract pool. For illustration, the first 6 frequent topics and three more specific topics are presented in Fig. 1.
 
 <figure align="center">
   <img src="images/2D_topic_distribusion.png">
-  <figcaption>Fig. 1 2D topic  distribution map of the generated 262 topics based on 16275 abstracts.</figcaption>
+  <figcaption>Fig. 1 2D topic  distribution map of the generated 247 topics based on 16364 abstracts.</figcaption>
 </figure>
 
->The 2D distribution map was generated via the UMAP which reduced the high dimension embedding space to 2 dimensional space. Each circle represents one topic recognized by Bertopic. The diameter of each circle indicates the size of the corresponding topic (Number of abstracts is sorted to this category.) The red circle is the topic 13 and accompanied with the corresponding topic words.
+>The 2D distribution map was generated via the UMAP which reduced the high dimension embedding space to 2 dimensional space. Each circle represents one topic recognized by Bertopic. The diameter of each circle indicates the size of the corresponding topic (Number of abstracts sorted to this category.) The red circle is the topic 12 and accompanied with the corresponding topic words.
 
 The complete topics generated can be found in the supplementary information section.
 
-Here, we present the mentioned 9 topics in the form of topicc word scores. Among them, last three topics were searched by cosine similarity via the keywords: covid, deep learning and perovskite. Figure 2 lists the resulting topics of interest.
+
+According to the cosine similarity of topic embeddings, a heatmap is generated shown the similarities among all the detected topics. As we can see in the Figure 2(left), that the topics are sorted to groups based on the similar semantics. Focusing on the central blue block which is enlarged and shown in Figure 2(right), this cluster is describing covid-19 related topics which including the areas of immunity, sarscov2 related viruses and corresponding treatments.
+
+ <figure align="center">
+   <img src="images/Similarity_matrix_combined.png">
+   <figcaption>Fig. 2 Similarity matrix shown the close relationship among the topics.</figcaption>
+ </figure>
+
+ >Each topic is encoded to a 384 dimensional embedding. Hierarchical clustering is performed based on the topic embedding matrix. Here, number of clusters is set to 15. These settings lead to the corresponding grouped topic similarity matrix as shown in Figure 2. The enlarged area in left side of Figure 2 gives the details of the similarity matrix of a cluster which meaningfully sorted the related topics together.
+
+ To trace the origins or the close relationship of similar topics, the dendrogram of Hierarchical clustering is generated for a close look in Figure 3.  
+
+
+ <figure align="center">
+   <img src="images/Hierarchical_clustering.png">
+   <figcaption>Fig. 3 A close look at the top 30 topics in the form of hierarchical clustering.</figcaption>
+ </figure>
+
+ >The hierarchical clustering dendrogram is shown in Figure 3 which is provided a overview of the relationship in a granular perspective. Also, it is reasonable to reset the number of clusters to generate the corresponding similarity matrix as in Figure 2.
+
+
+
+Here, we present the mentioned 9 topics in the form of topic word scores(c-TF-IDF). Among them, last three topics were searched by cosine similarity via the keywords: covid, deep learning and perovskite. Figure 3 lists the resulting topics of interest.
 
 <figure align="center">
   <img src="images/Topic_word_scores.png">
-  <figcaption>Fig. 2 Topics of interest are presenting together with the topics words and the corresponding c-TF-IDF scores.</figcaption>
+  <figcaption>Fig. 3 Topics of interest are presenting together with the topics words and the corresponding c-TF-IDF scores.</figcaption>
 </figure>
 
 >Topics were generated via pre-trained sentence transformer model: paraphrase-MiniLM-L6-v2. The nine topics of interest were used to evaluate the  quality of the pre-trained sentence transformer. Among the tested 5 pre-trained models, paraphrase-MiniLM-L6-v2 gives the best prediction based on the accuracy and meaningfulness of the topic words.
