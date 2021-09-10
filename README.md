@@ -77,39 +77,30 @@ To be more specific, in Figure 4, we present the top 6 topics in terms of topic 
 
 >Topics were generated via pre-trained sentence transformer model: paraphrase-MiniLM-L6-v2. The nine topics of interest were used to evaluate the  quality of the pre-trained sentence transformer. Among the tested 5 pre-trained models, paraphrase-MiniLM-L6-v2 gives the best prediction based on the accuracy and meaningfulness of the topic words with respect to the focused 9 topics.
 
-From the listed 9 topic words for each sub-figure, it is obviously conclude the main idea of the corresponding topic. For topic 11, the highest c-TF-IDF score word is sarscov2 which is exactly the virus name caused the pandemic. The second topic word covid19 is the name of the disease caused by sarscov2. Coronaviruses are a diverse group of viruses, and sarscov2 is one specific virus belonging to coronavirus. The following topic words, antibodies and vaccine also give a very good supplementary information to understand the topic 11. Vaccines simulate the immune system to produce target antibodies to defeat viruses. As mentioned before, topic 140 is found by searching keyword: deep learning. Compared with other listed topic words in Figure 4, the first 6 topic words for topic 140 have much high c-TF-IDF scores which are more representatively describing the main idea of topic 140. Learning to become intelligent is the task of deep learning area. Meanwhile, neural elements are the base of deep learning architectures. Currently, many advanced deep learning techniques are reflected via the intelligence playing games. Perovskite related researches are blooming since 2014 it was first found being used as dye to absorbing sunlight. Plenty papers were published to investigate the electroluminescent and photovoltaic properties of perovskite materials. Moreover, researches on crystallizations of the perovskite and architectures of integrated devices are all emerging recent years. As a conclusion, it is found meaningfully that the Bertopic model can
+From the listed 9 topic words for each sub-figure, it is obviously conclude the main idea of the corresponding topic. For topic 11, the highest c-TF-IDF score word is sarscov2 which is exactly the virus name caused the pandemic. The second topic word covid19 is the name of the disease caused by sarscov2. Coronaviruses are a diverse group of viruses, and sarscov2 is one specific virus belonging to coronavirus. The following topic words, antibodies and vaccine also give a very good supplementary information to understand the topic 11. Vaccines simulate the immune system to produce target antibodies to defeat viruses. As mentioned before, topic 140 is found by searching keyword: deep learning. Compared with other listed topic words in Figure 4, the first 6 topic words for topic 140 have much high c-TF-IDF scores which are more representatively describing the main idea of topic 140. Learning to become intelligent is the task of deep learning area. Meanwhile, neural elements are the base of deep learning architectures. Currently, many advanced deep learning techniques are reflected via the intelligence playing games. Perovskite related researches are blooming since 2014 it was first found being used as dye to absorbing sunlight. Plenty papers were published to investigate the electroluminescent and photovoltaic properties of perovskite materials. Moreover, researches on crystallizations of the perovskite and architectures of integrated devices are all emerging recent years. In summary, it is found meaningfully that the Bertopic model can give good representations of topics based on the scrapped data.
 
 
-
-Usually, topic modelling is static presentation for the understanding of the whole unstructured text data. It will be very interesting to discover the topic evolution over the time. Hence, it is possible to foreseen the future of the human beings. Luckily, Bertpic provides dynamic topic modelling which is utilized for the scrapped abstracts.
-
-<figure align="center">
-  <img src="images/Topics_over_time.png">
-  <figcaption>Fig. 5 Dynamic topic modelling showing the evolutions of topics over 148 years published by Nature journal.</figcaption>
-</figure>
-
->Bertpic provides dynamic topic modelling which is utilized for the scraped abstracts. Based on the fitted topic embeddings, abstracts are grouped and aggregated via topic numbers and timestamps. Then, for each unique timestamp, c-TF-IDF calculations are performed and the topics over time can be generated which is shown in Figure 5.
-
-Talk about the topic over time from 1873.
-Usually, topic modelling is static presentation for the understanding of the whole unstructured text data. It will be very interesting to discover the topic evolution over the time. Hence, it is possible to foreseen the future of the human beings. Luckily, Bertpic provides dynamic topic modelling which is utilized for the scrapped abstracts.
+Usually, topic modelling is static presentation for the understanding of the whole unstructured text data. However, we know that the topics vary with time. It will be very interesting to discover the topic evolution over the time. In this situation, it might be possible to foreseen the future of the human beings. Luckily, Bertpic provides dynamic topic modelling which is utilized for the scrapped abstracts as shown below in Figure 5.
 
 <figure align="center">
   <img src="images/Topics_over_time.png">
   <figcaption>Fig. 5 Dynamic topic modelling showing the evolutions of topics over 148 years published by Nature journal.</figcaption>
 </figure>
 
->Bertpic provides dynamic topic modelling which is utilized for the scraped abstracts. Based on the fitted topic embeddings, abstracts are grouped and aggregated via topic numbers and timestamps. Then, for each unique timestamp, c-TF-IDF calculations are performed and the topics over time can be generated which is shown in Figure 5.
+>Bertpic provides dynamic topic modelling which is utilized for the scraped abstracts. Based on the fitted topic embeddings, abstracts are grouped and aggregated via topic numbers and timestamps. Then, for each unique timestamp, c-TF-IDF calculations are performed to all the grouped documents in the specific timestamp. Hence, the topics over time can be generated which is shown in above figure.
+
+Here, as discussed before, the 9 topics are chose to illustrate the evolutions. In addition, three more topics: 7, 10, 23 are also presented in the Figure 5 due to the sharp increase around recent years. Between 1960s and 1980s, topics about galaxies, photosynthesis, nuclear, hominin, mantle and climate leading the categories.
+It is interesting to conclude that, around 50 years ago, people were trying to understand the universe and nature, macroscopically and microscopically. People were exploring about the origins/functionalities of plants, animals. In the 20th century, above topics cooled down. At the beginning of 20th century, topic 10 started to increase which covering the research related with cancer, mutations and tumours. This might be a signal that indicates the human focused on human body inner understanding, macroscopically, health care. Meanwhile, the cooled old climate topic started rising again, probably due to the industrial development, global warming came along with some detrimental problems. Climate become a hot topic after 1960s initial understanding.  In recent 15 years, new topics were appearing, and the slopes of the frequencies of these topics are never seen of all ages. In Figure 6, more granular of topic evolutions in most recent 10 years is presented.
 
 
-Talk about the topic over time from recent 10 years from 2010.
-Usually, topic modelling is static presentation for the understanding of the whole unstructured text data. It will be very interesting to discover the topic evolution over the time. Hence, it is possible to foreseen the future of the human beings. Luckily, Bertpic provides dynamic topic modelling which is utilized for the scrapped abstracts.
+Among the most recent topics, sarscov2 is roaring to the first position with a unprecedented frequency over 148 years since the first appearance in late 2019. Followed by the topological-related topic. Topological materials promise potentially revolution in energy utilization, and especially, quantum computing area. In accordance with expectations, quantum, qubit-related topic are just chasing below. Besides, cancer, global climating related topic follow. It is important to note here that the deep learning related topics are also starting to rise.
 
 <figure align="center">
   <img src="images/Topics_over_time_2010.png">
-  <figcaption>Fig. 5 Dynamic topic modelling showing the evolutions of topics over 148 years published by Nature journal.</figcaption>
+  <figcaption>Fig. 6 Topic modelling presentation from 2010.</figcaption>
 </figure>
 
->Bertpic provides dynamic topic modelling which is utilized for the scraped abstracts. Based on the fitted topic embeddings, abstracts are grouped and aggregated via topic numbers and timestamps. Then, for each unique timestamp, c-TF-IDF calculations are performed and the topics over time can be generated which is shown in Figure 5.
+>Figure 6 presents dynamic topic modelling result from 2010. The result was generated via setting number of bins to 444 which present the topics over time in terms of seasonal representation. More granular topic evolution trendings can be found in this figure. 
 
 
 ### Exploratory Data Analysis
