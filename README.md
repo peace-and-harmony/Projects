@@ -58,17 +58,17 @@ According to the cosine similarity of topic embeddings, a heatmap is generated s
 
  To trace the origins or the close relationship of similar topics, the dendrogram of Hierarchical clustering is generated for a close look in Figure 3.  
 
-
  <figure align="center">
    <img src="images/Hierarchical_clustering.png">
    <figcaption>Fig. 3 A close look at the top 30 topics in the form of hierarchical clustering.</figcaption>
  </figure>
 
- >The hierarchical clustering dendrogram is shown in Figure 3 which is provided a overview of the relationship in a granular perspective. Also, it is reasonable to reset the number of clusters to generate the corresponding similarity matrix as in Figure 2.
+ >The hierarchical clustering dendrogram is shown in Figure 3 which provides a overview of the relationships in a granular perspective among the top 40 topics. It's intriguing to focus on the yellow elements: cancer(topic 10) and immune(topic 15) merge to a branch which further merge with sasrscov2(topic 11). Meanwhile, the parallel black elements: variants(topic 14) and chromosome(topic 25) merge to evolution(topic 29). Together, this branch farther meet the yellow branch. It is obvious that these two branches talk about the viruses and immunity.
+
+ When plotting the whole hierarchical distribution among all the topics, it is reasonable to reset the number of clusters to generate a corresponding similarity matrix as in Figure 2.
 
 
-
-Here, we present the mentioned 9 topics in the form of topic word scores(c-TF-IDF). Among them, last three topics were searched by cosine similarity via the keywords: covid, deep learning and perovskite. Figure 3 lists the resulting topics of interest.
+To be more specific, in the Figure 3, we present the top 6 topics in terms of topic size and three more topics in the form of topic word scores(c-TF-IDF). The last three topics were searched by cosine similarity via the keywords: covid, deep learning and perovskite. Figure 3 lists the resulting topics of interest.
 
 <figure align="center">
   <img src="images/Topic_word_scores.png">
