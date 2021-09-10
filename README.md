@@ -88,6 +88,27 @@ Usually, topic modelling is static presentation for the understanding of the who
 
 >Bertpic provides dynamic topic modelling which is utilized for the scraped abstracts. Based on the fitted topic embeddings, abstracts are grouped and aggregated via topic numbers and timestamps. Then, for each unique timestamp, c-TF-IDF calculations are performed and the topics over time can be generated which is shown in Figure 5.
 
+Talk about the topic over time from 1873.
+Usually, topic modelling is static presentation for the understanding of the whole unstructured text data. It will be very interesting to discover the topic evolution over the time. Hence, it is possible to foreseen the future of the human beings. Luckily, Bertpic provides dynamic topic modelling which is utilized for the scrapped abstracts.
+
+<figure align="center">
+  <img src="images/Topics_over_time.png">
+  <figcaption>Fig. 5 Dynamic topic modelling showing the evolutions of topics over 148 years published by Nature journal.</figcaption>
+</figure>
+
+>Bertpic provides dynamic topic modelling which is utilized for the scraped abstracts. Based on the fitted topic embeddings, abstracts are grouped and aggregated via topic numbers and timestamps. Then, for each unique timestamp, c-TF-IDF calculations are performed and the topics over time can be generated which is shown in Figure 5.
+
+
+Talk about the topic over time from recent 10 years from 2010.
+Usually, topic modelling is static presentation for the understanding of the whole unstructured text data. It will be very interesting to discover the topic evolution over the time. Hence, it is possible to foreseen the future of the human beings. Luckily, Bertpic provides dynamic topic modelling which is utilized for the scrapped abstracts.
+
+<figure align="center">
+  <img src="images/Topics_over_time_2010.png">
+  <figcaption>Fig. 5 Dynamic topic modelling showing the evolutions of topics over 148 years published by Nature journal.</figcaption>
+</figure>
+
+>Bertpic provides dynamic topic modelling which is utilized for the scraped abstracts. Based on the fitted topic embeddings, abstracts are grouped and aggregated via topic numbers and timestamps. Then, for each unique timestamp, c-TF-IDF calculations are performed and the topics over time can be generated which is shown in Figure 5.
+
 
 ### Exploratory Data Analysis
 Obviously, the covid-19 pandemic hindered the development of plenty areas, e.g. business, internationalism. At the beginning of the pandemic, some academic labs are closed and a lot of experiments are delayed. It's interesting to analize whether the pandemic indeed slow down the development of academia.
