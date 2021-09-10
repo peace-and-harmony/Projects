@@ -68,26 +68,26 @@ According to the cosine similarity of topic embeddings, a heatmap is generated s
  When plotting the whole hierarchical distribution among all the topics, it is reasonable to reset the number of clusters to generate a corresponding similarity matrix as in Figure 2.
 
 
-To be more specific, in the Figure 3, we present the top 6 topics in terms of topic size and three more topics in the form of topic word scores(c-TF-IDF). The last three topics were searched by cosine similarity via the keywords: covid, deep learning and perovskite. Figure 3 lists the resulting topics of interest.
+To be more specific, in the Figure 4, we present the top 6 topics in terms of topic size and three more topics in the form of topic word scores(c-TF-IDF). The last three topics were searched by cosine similarity via the keywords: covid, deep learning and perovskite. Figure 4 lists the resulting topics of interest.
 
 <figure align="center">
-  <img src="images/Topic_word_scores.png">
-  <figcaption>Fig. 3 Topics of interest are presenting together with the topics words and the corresponding c-TF-IDF scores.</figcaption>
+  <img src="images/Topic_word_scores.png" alt="drawing" width="1000">
+  <figcaption>Fig. 4 Topics of interest are presenting together with the topics words and the corresponding c-TF-IDF scores.</figcaption>
 </figure>
 
 >Topics were generated via pre-trained sentence transformer model: paraphrase-MiniLM-L6-v2. The nine topics of interest were used to evaluate the  quality of the pre-trained sentence transformer. Among the tested 5 pre-trained models, paraphrase-MiniLM-L6-v2 gives the best prediction based on the accuracy and meaningfulness of the topic words.
 
 
 
->Perspective for topic evolution over 148 years from 1873 to 2021.
-Explore the [Bertopic](https://github.com/MaartenGr/BERTopic) generated topics over time:
-![product-screenshot-tbc](images/Topics_over_time.png)
+Usually, topic modelling is static presentation for the understanding of the whole unstructured text data. It will be very interesting to discover the topic evolution over the time. Hence, it is possible to foreseen the future of the human beings. Luckily, Bertpic provides dynamic topic modelling which is utilized for the scrapped abstracts.
 
+<figure align="center">
+  <img src="images/Topics_over_time.png">
+  <figcaption>Fig. 5 Dynamic topic modelling showing the evolutions of topics over 148 years published by Nature journal.</figcaption>
+</figure>
 
+>Bertpic provides dynamic topic modelling which is utilized for the scraped abstracts. Based on the fitted topic embeddings, abstracts are grouped and aggregated via topic numbers and timestamps. Then, for each unique timestamp, c-TF-IDF calculations are performed and the topics over time can be generated which is shown in Figure 5.
 
-
-And it's interesting to explore the hierarchical distribustion of the founded topics:
-![product-screenshot-tbc](images/Hierarchical_clustering.png)
 
 ### Exploratory Data Analysis
 Obviously, the covid-19 pandemic hindered the development of plenty areas, e.g. business, internationalism. At the beginning of the pandemic, some academic labs are closed and a lot of experiments are delayed. It's interesting to analize whether the pandemic indeed slow down the development of academia.
