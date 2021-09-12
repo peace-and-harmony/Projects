@@ -39,12 +39,14 @@ To investigate on these problems, a scraper was designed to extract the informat
 ## Results and discussion
 
 ### Exploratory Data Analysis
-As mentioned in the Introduction section, 19923 article information were used for EDA. The corresponding results are plotted in Figure 1. 
+As mentioned in the Introduction section, 19923 article information were used for EDA. The corresponding results are plotted in Figure 1.
 
 <figure align="center">
   <img src="images/access_citation_altmetric.jpeg">
   <figcaption>Fig. 1 2D topic  distribution map of the generated 247 topics based on 16364 abstracts.</figcaption>
 </figure>
+
+We can conclude that expect for those newly developed theories/techniques, many areas which somehow related with covid-19 are blooming starting from the end of 2019.
 
 ### Topic Modelling
 
