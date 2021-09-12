@@ -1,7 +1,7 @@
 # Nature articles topic modelling
-Topic modelling and analysis on Nature published articles since 1873.
+Topic modelling and analysis on Nature published articles since 1886.
 
-* Scraped around 19760 articles from 1873 to 2021.
+* Scraped around 19760 articles from 1886 to 2021.
 * Performed EDA on the numerical data and concluded that the pandemic indeed boosts the related researches.
 * Utilized Bertopic to the extracted abstracts to investigate the subjects evolution along the history.
 
@@ -10,10 +10,11 @@ Topic modelling and analysis on Nature published articles since 1873.
 ## Table of Contents
 
 * [About the project](#about-the-project)
+* [Introduction](#introduction)
 
 * [Results and discussion](#results-and-discussion)
-  * [Topic modelling](#topic-modelling)
   * [Exploratory data analysis](#eda)
+  * [Topic modelling](#topic-modelling)
 * [Conclusion](#conclusion)
 * [Citation](#citation)
 * [Supplimentary information](#supplimentary-info)   
@@ -28,14 +29,24 @@ Topic modelling and analysis on Nature published articles since 1873.
 <!-- ![product-screenshot-tbc](data/example-inference.png) -->
 [Nature](https://www.nature.com/) is one of the most cited scientific journals. Among different types of sections in an issue, [original research articles](https://www.nature.com/nature/articles?type=article) are original reports whose conclusions represent a substantial advance in understanding of an important problem and have immediate, far-reaching implications. The general articles information and corresponding article abstracts were obtained via a scraper. Based on these data, exploratory data analysis  and topic modelling was performed for further understanding the general scope of the evolutions of human interested knowledge.
 
+<!-- INTRODUCTION -->
+## Introduction
+It is obvious that the covid-19 pandemic hindered the development of plenty areas, e.g. business, internationalism. At the beginning of the pandemic, some academic labs are closed and a lot of experiments are delayed. It's interesting to analyze whether the pandemic indeed slow down the development of academia and which subjects of academia are greatly affected.
+
+To investigate on these problems, a scraper was designed to extract the information of Nature [original research articles](https://www.nature.com/nature/articles?type=article) from January, 1886 to September, 2021. The extract information includes the article title, published date, number of accesses, citations, altmetric of each paper, authors' affiliations, corresponding authors, digital object identifier(dois), subjects, and abstract. In total, there are 19923 items successfully scraped which were used for Exploratory Data Analysis(EDA). Among the 19923 articles, there is 8518 articles with no abstract whose abstract is further filled with titles. Meanwhile, some meaningfulness and short abstracts were filtered. The left 16364 abstracts were used for topic modelling.
+
 <!-- Discussion and results -->
 ## Results and discussion
+
+### Exploratory Data Analysis
+As mentioned in the Introduction section, 19923 article information were used for EDA. 
+
 
 ### Topic Modelling
 
 At the stage of information explosion era, topic modelling becomes essential for understanding of unstructured data. Nature research articles provide the highly focused and trustable multidisciplinary presentations of the essence of human knowledge.
 
-After fit and transform, Bertopic generated corresponding embedding space which can be utilized for further analysis. First of all, it's important to know how many topics over the 16276 articles from 1873 to 2021 inside the interested text data. There are 247 topics recognized from the abstract pool. For illustration, the first 6 frequent topics and three more specific topics are presented in Fig. 1.
+After fit and transform, Bertopic generated corresponding embedding space which can be utilized for further analysis. First of all, it's important to know how many topics over the 16276 articles from 1886 to 2021 inside the interested text data. There are 247 topics recognized from the abstract pool. For illustration, the first 6 frequent topics and three more specific topics are presented in Fig. 1.
 
 <figure align="center">
   <img src="images/2D_topic_distribusion.png">
@@ -100,11 +111,8 @@ Among the most recent topics, sarscov2 is roaring to the first position with a u
   <figcaption>Fig. 6 Topic modelling presentation from 2010.</figcaption>
 </figure>
 
->Figure 6 presents dynamic topic modelling result from 2010. The result was generated via setting number of bins to 444 which present the topics over time in terms of seasonal representation. More granular topic evolution trendings can be found in this figure. 
+>Figure 6 presents dynamic topic modelling result from 2010. The result was generated via setting number of bins to 444 which present the topics over time in terms of seasonal representation. More granular topic evolution trendings can be found in this figure.
 
-
-### Exploratory Data Analysis
-Obviously, the covid-19 pandemic hindered the development of plenty areas, e.g. business, internationalism. At the beginning of the pandemic, some academic labs are closed and a lot of experiments are delayed. It's interesting to analize whether the pandemic indeed slow down the development of academia.
 
 ## Conclusion
 EDA clearly suggests that instead of hindering the development of academia, the pandemic expands and accelerate areas related with SARS‑CoV‑2.
