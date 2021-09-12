@@ -33,14 +33,18 @@ Topic modelling and analysis on Nature published articles since 1886.
 ## Introduction
 It is obvious that the covid-19 pandemic hindered the development of plenty areas, e.g. business, internationalism. At the beginning of the pandemic, some academic labs are closed and a lot of experiments are delayed. It's interesting to analyze whether the pandemic indeed slow down the development of academia and which subjects of academia are greatly affected.
 
-To investigate on these problems, a scraper was designed to extract the information of Nature [original research articles](https://www.nature.com/nature/articles?type=article) from January, 1886 to September, 2021. The extract information includes the article title, published date, number of accesses, citations, altmetric of each paper, authors' affiliations, corresponding authors, digital object identifier(dois), subjects, and abstract. In total, there are 19923 items successfully scraped which were used for Exploratory Data Analysis(EDA). Among the 19923 articles, there is 8518 articles with no abstract whose abstract is further filled with titles. Meanwhile, some meaningfulness and short abstracts were filtered. The left 16364 abstracts were used for topic modelling.
+To investigate on these problems, a scraper was designed to extract the information of Nature [original research articles](https://www.nature.com/nature/articles?type=article) from January, 1886 to September, 2021. The extract information includes the article title, published date, number of accesses, citations, altmetric of each paper, authors' affiliations, corresponding authors, digital object identifier(dois), subjects, and abstract. In total, there are 19923 items successfully scraped which were used for Exploratory Data Analysis(EDA). Among the 19923 articles, there is 8518 articles with no abstract whose abstract is further filled with titles. Meanwhile, some meaningfulness and short abstracts were filtered out. The left 16364 abstracts were used for topic modelling.
 
 <!-- Discussion and results -->
 ## Results and discussion
 
 ### Exploratory Data Analysis
-As mentioned in the Introduction section, 19923 article information were used for EDA. 
+As mentioned in the Introduction section, 19923 article information were used for EDA. The corresponding results are plotted in Figure 1. 
 
+<figure align="center">
+  <img src="images/access_citation_altmetric.jpeg">
+  <figcaption>Fig. 1 2D topic  distribution map of the generated 247 topics based on 16364 abstracts.</figcaption>
+</figure>
 
 ### Topic Modelling
 
