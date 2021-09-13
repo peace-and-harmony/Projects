@@ -39,14 +39,14 @@ To investigate on these problems, a scraper was designed to extract the informat
 ## Results and discussion
 
 ### Exploratory Data Analysis
-As mentioned in the Introduction section, 19923 article information were used for EDA. Let's start with the overview of the whole dataset.
+For the EDA part, we focus on the discussion about the article metrics and corresponding tagged subject terms. The corresponding statistic illustrations are plotted in Figure 1. The number of research articles per year published in Nature is plotted in Figure 1(a). The two spikes around 1960 and 2020 indicates there are a large amount of articles published in these period. Interestingly, the access count of articles in Figure 1(b) is inconsistent with this trend. This phenomenon might is due to the small number of researchers and low accessibility to research journals and internet in 1960s. The citation count per article in Figure 1(c) shows a steady increase from 1970s and then a decrease trend from 2000. These changing is closely related with the number of articles published each year. With the rise of social media in early 2000s, the altmetric data starts roaring in Figure 1(d) suggests the successfulness of broadcasting the Nature's aim and scope to the wider public.
 
 <figure align="center">
   <img src="images/access_citation_altmetric.jpeg">
   <figcaption>Fig. 1 Overview of the 19923 articles' metric information.</figcaption>
 </figure>
 
->These figures are generated based on the summary of the overall accessibility. Overall published number of articles each year is shown in up left in Figure 1. Accesses per article shown on top right indicates the number of times an article has been accessed on average each year. Citation per article shown on bottom left suggests the number of times an article has been cited on average each year. Altmetric per article on the bottom right records the online attention the corresponding paper received. The source of the online attention was mainly contributed from social media and mainstream news.
+>These figures are generated based on the summary of the scrapped numerical information. Accesses per article shown on top right indicates the number of times an article has been accessed on average each year. Citation per article shown in Figure 1(c) suggests the number of times an article has been cited on average each year. Altmetric per article In Figure 1(d) records the online attention the corresponding paper received. The source of the online attention was mainly contributed from social media and mainstream news.
 
 Starting from 2010, each article published in Nature has been tagged with one or more subject terms which potentially can provide more statistic information other than the content of the corresponding paper. Here, we scrapped all subject terms of each paper. Then, count appearance of single subject term per year and plot the results in Figure 2.
 
