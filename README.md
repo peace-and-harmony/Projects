@@ -46,9 +46,27 @@ As mentioned in the Introduction section, 19923 article information were used fo
   <figcaption>Fig. 1 Overview of the 19923 articles' metric information.</figcaption>
 </figure>
 
->These figures are generated based on the summary of the overall accessibility. Overall published number of articles each year is shown in up left in Figure 1. Accesses per article shown on top right indicates the number of times an article has been accessed on average each year. Citation per article shown on bottom left suggests the number of times an article has been cited on average each year. Altmetric per article on the bottom right records the online attention the corresponding paper received. The source of the online attention was mainly contributed from social media and mainstream news. 
+>These figures are generated based on the summary of the overall accessibility. Overall published number of articles each year is shown in up left in Figure 1. Accesses per article shown on top right indicates the number of times an article has been accessed on average each year. Citation per article shown on bottom left suggests the number of times an article has been cited on average each year. Altmetric per article on the bottom right records the online attention the corresponding paper received. The source of the online attention was mainly contributed from social media and mainstream news.
 
-We can conclude that expect for those newly developed theories/techniques, many areas which somehow related with covid-19 are blooming starting from the end of 2019.
+Starting from 2010, each article published in Nature has been tagged with one or more subject terms which potentially can provide more statistic information other than the content of the corresponding paper. Here, we scrapped all subject terms of each paper. Then, count appearance of single subject term per year and plot the results in Figure 2.
+
+<figure align="center">
+  <img src="images/narticlesvssubject.jpeg">
+  <figcaption>Fig. 2 Overview of the 19923 articles' metric information.</figcaption>
+</figure>
+
+>Pandas stack method is used to split multiple subject terms assigned in one article. Then, count the appearance of each subject per year. At last, based on the total number of subject terms (corresponding to number of articles related to the mentioned subject), plot the result of top 20 subject terms.
+
+Besides above discussion about the top three subjects, four interesting subjects are also listed in Figure 3 as below. It is obvious that the viral infection and evolutionary genetics are closely related the pandemic. So it's reasonable to conclude that the pandemic is responsible for the spike in 2020 for the top two sub-figures shown in Figure 3. Intriguingly, quantum computer related research is blooming recent years. the big spike in 2020 in the sub-figure quantum information suggests that the pandemic not only has no effect on the development of this area, but might accelerate the development as well.
+
+<figure align="center">
+  <img src="images/subject_with_out_covid.jpeg">
+  <figcaption>Fig. 3 Overview of the 19923 articles' metric information.</figcaption>
+</figure>
+
+>From the top 30 subject terms, four subjects are picked for illustration to show the impact of pandemic for the development of covid related areas and unrelated ares.
+
+We can safely conclude that expect for those newly developed theories/techniques, many areas which somehow related with covid-19 are blooming starting from the end of 2019.
 
 ### Topic Modelling
 
@@ -58,7 +76,7 @@ After fit and transform, Bertopic generated corresponding embedding space which 
 
 <figure align="center">
   <img src="images/2D_topic_distribusion.png">
-  <figcaption>Fig. 1 2D topic  distribution map of the generated 247 topics based on 16364 abstracts.</figcaption>
+  <figcaption>Fig. 4 2D topic  distribution map of the generated 247 topics based on 16364 abstracts.</figcaption>
 </figure>
 
 >The 2D distribution map was generated via the UMAP which reduced the high dimension embedding space to 2 dimensional space. Each circle represents one topic recognized by Bertopic. The diameter of each circle indicates the size of the corresponding topic (Number of abstracts sorted to this category.) The red circle is the topic 12 and accompanied with the corresponding topic words.
@@ -70,7 +88,7 @@ According to the cosine similarity of topic embeddings, a heatmap is generated s
 
  <figure align="center">
    <img src="images/Similarity_matrix_combined.png">
-   <figcaption>Fig. 2 Similarity matrix shown the close relationship among the topics.</figcaption>
+   <figcaption>Fig. 5 Similarity matrix shown the close relationship among the topics.</figcaption>
  </figure>
 
  >Each topic is encoded to a 384 dimensional embedding. Hierarchical clustering is performed based on the topic embedding matrix. Here, number of clusters is set to 15. These settings lead to the corresponding grouped topic similarity matrix as shown in Figure 2. The enlarged area in left side of Figure 2 gives the details of the similarity matrix of a cluster which meaningfully sorted the related topics together.
@@ -79,7 +97,7 @@ According to the cosine similarity of topic embeddings, a heatmap is generated s
 
  <figure align="center">
    <img src="images/Hierarchical_clustering.png">
-   <figcaption>Fig. 3 A close look at the top 30 topics in the form of hierarchical clustering.</figcaption>
+   <figcaption>Fig. 6 A close look at the top 30 topics in the form of hierarchical clustering.</figcaption>
  </figure>
 
  >The hierarchical clustering dendrogram is shown in Figure 3 which provides a overview of the relationships in a granular perspective among the top 30 topics. It's intriguing to focus on the yellow elements: cancer(topic 10) and immune(topic 15) merge to a branch which further merge with sasrscov2(topic 11). Meanwhile, the parallel black elements: variants(topic 14) and chromosome(topic 25) merge to evolution(topic 29). Together, this branch farther meet the yellow branch. It is obvious that these two branches talk about the viruses and immunity.
@@ -91,7 +109,7 @@ To be more specific, in Figure 4, we present the top 6 topics in terms of topic 
 
 <figure align="center">
   <img src="images/Topic_word_scores.png" alt="drawing" width="1000">
-  <figcaption>Fig. 4 Topics of interest are presenting together with the topics words and the corresponding c-TF-IDF scores.</figcaption>
+  <figcaption>Fig. 7 Topics of interest are presenting together with the topics words and the corresponding c-TF-IDF scores.</figcaption>
 </figure>
 
 >Topics were generated via pre-trained sentence transformer model: paraphrase-MiniLM-L6-v2. The nine topics of interest were used to evaluate the  quality of the pre-trained sentence transformer. Among the tested 5 pre-trained models, paraphrase-MiniLM-L6-v2 gives the best prediction based on the accuracy and meaningfulness of the topic words with respect to the focused 9 topics.
@@ -103,7 +121,7 @@ Usually, topic modelling is static presentation for the understanding of the who
 
 <figure align="center">
   <img src="images/Topics_over_time.png">
-  <figcaption>Fig. 5 Dynamic topic modelling showing the evolutions of topics over 148 years published by Nature journal.</figcaption>
+  <figcaption>Fig. 8 Dynamic topic modelling showing the evolutions of topics over 148 years published by Nature journal.</figcaption>
 </figure>
 
 >Bertpic provides dynamic topic modelling which is utilized for the scraped abstracts. Based on the fitted topic embeddings, abstracts are grouped and aggregated via topic numbers and timestamps. Then, for each unique timestamp, c-TF-IDF calculations are performed to all the grouped documents in the specific timestamp. Hence, the topics over time can be generated which is shown in above figure.
@@ -116,7 +134,7 @@ Among the most recent topics, sarscov2 is roaring to the first position with a u
 
 <figure align="center">
   <img src="images/Topics_over_time_2010.png">
-  <figcaption>Fig. 6 Topic modelling presentation from 2010.</figcaption>
+  <figcaption>Fig. 9 Topic modelling presentation from 2010.</figcaption>
 </figure>
 
 >Figure 6 presents dynamic topic modelling result from 2010. The result was generated via setting number of bins to 444 which present the topics over time in terms of seasonal representation. More granular topic evolution trendings can be found in this figure.
