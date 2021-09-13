@@ -39,12 +39,14 @@ To investigate on these problems, a scraper was designed to extract the informat
 ## Results and discussion
 
 ### Exploratory Data Analysis
-As mentioned in the Introduction section, 19923 article information were used for EDA. The corresponding results are plotted in Figure 1.
+As mentioned in the Introduction section, 19923 article information were used for EDA. Let's start with the overview of the whole dataset.
 
 <figure align="center">
   <img src="images/access_citation_altmetric.jpeg">
-  <figcaption>Fig. 1 2D topic  distribution map of the generated 247 topics based on 16364 abstracts.</figcaption>
+  <figcaption>Fig. 1 Overview of the 19923 articles' metric information.</figcaption>
 </figure>
+
+>These figures are generated based on the summary of the overall accessibility. Overall published number of articles each year is shown in up left in Figure 1. Accesses per article shown on top right indicates the number of times an article has been accessed on average each year. Citation per article shown on bottom left suggests the number of times an article has been cited on average each year. Altmetric per article on the bottom right records the online attention the corresponding paper received. The source of the online attention was mainly contributed from social media and mainstream news. 
 
 We can conclude that expect for those newly developed theories/techniques, many areas which somehow related with covid-19 are blooming starting from the end of 2019.
 
