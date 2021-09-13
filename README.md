@@ -39,7 +39,7 @@ To investigate on these problems, a scraper was designed to extract the informat
 ## Results and discussion
 
 ### Exploratory Data Analysis
-For the EDA part, we focus on the discussion about the article metrics and corresponding tagged subject terms. The corresponding statistic illustrations are plotted in Figure 1. The number of research articles per year published in Nature is plotted in Figure 1(a). The two spikes around 1960 and 2020 indicates there are a large amount of articles published in these period. Interestingly, the access count of articles in Figure 1(b) is inconsistent with this trend. This phenomenon might is due to the small number of researchers and low accessibility to research journals and internet in 1960s. The citation count per article in Figure 1(c) shows a steady increase from 1970s and then a decrease trend from 2000. These changing is closely related with the number of articles published each year. With the rise of social media in early 2000s, the altmetric data starts roaring in Figure 1(d) suggests the successfulness of broadcasting the Nature's aim and scope to the wider public.
+For the EDA part, we focus on the discussion about the article metrics and corresponding tagged subject terms. The corresponding statistic illustrations are plotted in Figure 1. The number of research articles per year published in Nature is plotted in Figure 1(a). The two spikes around 1960 and 2020 indicates there are a large amount of articles published in these period. There is no decrease of the number of publications since the staring of the pandemic. Interestingly, the access count of articles in Figure 1(b) is inconsistent with this trend. This phenomenon might is due to the small number of researchers and low accessibility to research journals and internet in 1960s. The citation count per article in Figure 1(c) shows a steady increase from 1970s and then a decrease trend from 2000. These changing is closely related with the number of articles published each year. With the rise of social media in early 2000s, the altmetric data starts roaring in Figure 1(d) suggests the successfulness of broadcasting the Nature's aim and scope to the wider public.
 
 <figure align="center">
   <img src="images/access_citation_altmetric.jpeg">
@@ -48,14 +48,14 @@ For the EDA part, we focus on the discussion about the article metrics and corre
 
 >These figures are generated based on the summary of the scrapped numerical information. Accesses per article shown on top right indicates the number of times an article has been accessed on average each year. Citation per article shown in Figure 1(c) suggests the number of times an article has been cited on average each year. Altmetric per article In Figure 1(d) records the online attention the corresponding paper received. The source of the online attention was mainly contributed from social media and mainstream news.
 
-Starting from 2010, each article published in Nature has been tagged with one or more subject terms which potentially can provide more statistic information other than the content of the corresponding paper. Here, we scrapped all subject terms of each paper. Then, count appearance of single subject term per year and plot the results in Figure 2.
+Starting from 2010, each article published in Nature has been tagged with one or more subject terms which potentially can provide more statistic information other than the content of the corresponding paper. Here, we scrapped all subject terms of each paper. Then, we count appearance of single subject term per year and plot the results in Figure 2 which renders a overview of the subjects distribution. This overview illustration can give good summary of the main subjects over the years. Undoubtedly, the keywords: SARS-CoV-2, RNA, Viral infection, etc. are directly related with the pandemic. However, number of articles tagged with Cryoelectron microscopy is the largest. And the X-ray crystallography is the third largest category. In the sub-figure, the number of articles vs specific subjects(top three subjects) was plotted for further understanding the development of the mentioned areas. It's obvious that the SARS-CoV-2 is a completely new subject starting from 2020 which a huge amound of publications. Interestingly, number of publications related to Cryoelectron microscopy steadily increases since 2014, and roars to the most frequent subject in 2020. Meanwhile, research on X-ray crystallography decreases from 2015, but experiences a steep increase also in 2020. Intuitively, these two areas are closely affected by the pandemic positively. Previously, Cryoelectron microscopy was utilized for determining 3D structure of virus. And X-ray crystallography was widely utilized for determining the Crystalline structure at the atomic and molecular level. Based on the references, these two techniques or even the combination of Cryoelectron microscopy and X-ray crystallography will reveal the mystery of the interactions fo the spike protein of SARS-CoV-2 and the cell receptor which reasonably explains the information we obtained from Figure 2.
 
 <figure align="center">
   <img src="images/narticlesvssubject.jpeg">
   <figcaption>Fig. 2 Overview of the 19923 articles' metric information.</figcaption>
 </figure>
 
->Pandas stack method is used to split multiple subject terms assigned in one article. Then, count the appearance of each subject per year. At last, based on the total number of subject terms (corresponding to number of articles related to the mentioned subject), plot the result of top 20 subject terms.
+>Pandas stack method is used to split multiple subject terms assigned in one article. Then, count the appearance of each subject per year. Based on the total number of subject terms (corresponding to number of articles related to the mentioned subject), plot the result of top 20 subject terms from 2010.
 
 Besides above discussion about the top three subjects, four interesting subjects are also listed in Figure 3 as below. It is obvious that the viral infection and evolutionary genetics are closely related the pandemic. So it's reasonable to conclude that the pandemic is responsible for the spike in 2020 for the top two sub-figures shown in Figure 3. Intriguingly, quantum computer related research is blooming recent years. the big spike in 2020 in the sub-figure quantum information suggests that the pandemic not only has no effect on the development of this area, but might accelerate the development as well.
 
@@ -72,7 +72,7 @@ We can safely conclude that expect for those newly developed theories/techniques
 
 At the stage of information explosion era, topic modelling becomes essential for understanding of unstructured data. Nature research articles provide the highly focused and trustable multidisciplinary presentations of the essence of human knowledge.
 
-After fit and transform, Bertopic generated corresponding embedding space which can be utilized for further analysis. First of all, it's important to know how many topics over the 16276 articles from 1886 to 2021 inside the interested text data. There are 247 topics recognized from the abstract pool. For illustration, the first 6 frequent topics and three more specific topics are presented in Fig. 1.
+After fit and transform, Bertopic generated corresponding embedding space which can be utilized for further analysis. First of all, it's important to know how many topics over the 16276 articles from 1886 to 2021 inside the interested text data. There are 247 topics recognized from the abstract pool. For illustration, the first 6 frequent topics and three more specific topics are presented in Figure. 4.
 
 <figure align="center">
   <img src="images/2D_topic_distribusion.png">
@@ -174,4 +174,18 @@ For more details of this project, please check the information listed below.
   url = {https://doi.org/10.5281/zenodo.4381785}
 }
 ```
+
+```bibtex
+@article{lan2020structure,
+  title={Structure of the SARS-CoV-2 spike receptor-binding domain bound to the ACE2 receptor},
+  author={Lan, Jun and Ge, Jiwan and Yu, Jinfang and Shan, Sisi and Zhou, Huan and Fan, Shilong and Zhang, Qi and Shi, Xuanling and Wang, Qisheng and Zhang, Linqi and others},
+  journal={Nature},
+  volume={581},
+  number={7807},
+  pages={215--220},
+  year={2020},
+  publisher={Nature Publishing Group}
+}
+```
+
 ## Contact
