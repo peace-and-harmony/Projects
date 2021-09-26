@@ -137,10 +137,11 @@ Among the most recent topics, sarscov2 is roaring to the first position with a u
   <figcaption>Fig. 9 Topic modelling presentation from 2010.</figcaption>
 </figure>
 
->Figure 6 presents dynamic topic modelling result from 2010. The result was generated via setting number of bins to 444 which present the topics over time in terms of seasonal representation. More granular topic evolution trendings can be found in this figure.
+>Figure 9 presents dynamic topic modelling result from 2010. The result was generated via setting number of bins to 444 which present the topics over time in terms of seasonal representation. More granular topic evolution trendings can be found in this figure.
 
 
 ## Conclusion
+2020 is a miracle year for all human beings. It a hard year that we have to fight with the new SARS‑CoV‑2 virus which causes unprecedented mess on life, ecomony, eviroment, etc. However, we, human beings are the creatures who are tough enough to survive and meanwhile focus on other promising areas, like quantum computing, artificial intelligentce.
 EDA clearly suggests that instead of hindering the development of academia, the pandemic expands and accelerate areas related with SARS‑CoV‑2.
 From the results of topic modelling, it is intriguing to overview the topic evolutions over the 148 years which closely related with human beings' development and can be foreseen the futher areas that human will focused on.
 
