@@ -141,7 +141,7 @@ Among the most recent topics, SARS‑CoV‑2 is roaring to the first position wi
 
 >Figure 9 presents the dynamic topic modelling results from 2010. The result was generated via setting the number of bins to 444 which present the topics over time in terms of seasonal representation. More granular topic evolution trendings can be found in this figure.
 
-The topics that appeared in Figure 9 clearly indicate human beings shift the interests from natural science to the areas which are artifically created by us. We can make a few predictions according to the understanding of this topic evolution. The SARS‑CoV‑2 related topics might start to descrease after couple of years. However, for those emerging technologies and more demanding problems like quantum computing and global warming topics, they will continue climbing for recent future. 
+The topics that appeared in Figure 9 clearly indicate human beings shift the interests from natural science to the areas which are artifically created by us. We can make a few predictions according to the understanding of this topic evolution. The SARS‑CoV‑2 related topics might start to descrease after couple of years. However, for those emerging technologies and more demanding problems like quantum computing and global warming topics, they will continue climbing in the following years. It might be interesting to further perform time series predition on the dynamic topic modelling result to uncover more insights of the topic varying in the future. 
 
 
 ## Conclusion
