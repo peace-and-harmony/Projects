@@ -4,6 +4,8 @@ Topic modelling and analysis on Nature published articles since 1886.
 * Scraped around 19760 articles from 1886 to 2021.
 * Performed EDA on the numerical data and concluded that the pandemic indeed boosts the related researches.
 * Utilized Bertopic to the extracted abstracts to investigate the evolution of the subject around 148 years.
+* Found that the pandemic makes no difference to the emerging science and technologies.
+
 
 
 <!-- TABLE OF CONTENTS -->
@@ -17,11 +19,11 @@ Topic modelling and analysis on Nature published articles since 1886.
   * [Topic modelling](#topic-modelling)
 * [Conclusion](#conclusion)
 * [Citation](#citation)
-* [Supplimentary information](#supplimentary-info)   
+<!-- * [Supplimentary information](#supplimentary-info)   
   * [Notebooks](#notebooks)
   * [Scripts and tools](#scripts-and-tools)
-  * [Supplementary data](#supplementary-data)
-* [Contact](#contact)
+  * [Supplementary data](#supplementary-data) -->
+<!-- * [Contact](#contact) -->
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -130,7 +132,7 @@ Here, as discussed before, the 9 topics are chosen to illustrate the evolutions.
 It is interesting to conclude that, around 50 years ago, people were trying to understand the universe and nature, macroscopically and microscopically. People were exploring the origins/functionalities of plants, animals. In the 20th century, the above topics cooled down. At the beginning of the 20th century, topic 10 started to increase which covering the research related to cancer, mutations and tumours. This might be a signal that indicates people focused on human-body inner understanding, macroscopically, health care. Meanwhile, the cooled old climate topic started rising again, probably due to the industrial development, global warming came along with some detrimental problems. Climate became a hot topic after the 1960s initial understanding.  In recent 15 years, new topics were appearing, and the slopes of the frequencies of these topics are never seen of all ages. In Figure 6, more granular topic evolutions in the most recent 10 years are presented.
 
 
-Among the most recent topics, SARS‑CoV‑2 is roaring to the first position with an unprecedented frequency of over 148 years since its first appearance in late 2019. Followed by the topological-related topic. Topological materials promise a potential revolution in energy utilization, and especially, quantum computing area. Under expectations, quantum, qubit-related topics are just chasing below. Besides, cancer, global climate related topics follow. It is important to note here that the deep learning related topics are also starting to rise.
+Among the most recent topics, SARS‑CoV‑2 is roaring to the first position with an unprecedented frequency of over 148 years since its first appearance in late 2019. Followed by the topological-related topic. Topological materials promise a potential revolution in energy utilization, and especially, quantum computing area. As might have been expected, quantum, qubit-related topics are just chasing below. Besides, cancer, global climate related topics rise again. It is important to note here that the deep learning related topics are also starting to lift.
 
 <figure align="center">
   <img src="images/Topics_over_time_2010.png">
@@ -139,7 +141,7 @@ Among the most recent topics, SARS‑CoV‑2 is roaring to the first position wi
 
 >Figure 9 presents the dynamic topic modelling results from 2010. The result was generated via setting the number of bins to 444 which present the topics over time in terms of seasonal representation. More granular topic evolution trendings can be found in this figure.
 
-The topics that appeared in Figure 9 clearly indicate human beings shift the interests from natural science to the areas which are mainly created by us.
+The topics that appeared in Figure 9 clearly indicate human beings shift the interests from natural science to the areas which are artifically created by us. We can make a few predictions according to the understanding of this topic evolution. The SARS‑CoV‑2 related topics might start to descrease after couple of years. However, for those emerging technologies and more demanding problems like quantum computing and global warming topics, they will continue climbing for recent future. 
 
 
 ## Conclusion
@@ -190,5 +192,3 @@ For more details of this project, please check the information listed below.
   publisher={Nature Publishing Group}
 }
 ```
-
-## Contact
